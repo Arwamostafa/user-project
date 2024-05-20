@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="img/Betak.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+     -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+  
+    <link rel="stylesheet" href="css/calculator.css">
+    <title> Calculator</title>
+  </head>
+  <body>
+<!-- -------------- -->
+<!-- Spinner Start -->
+<!-- -------------- -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-border" style="width: 3rem; height: 3rem; z-index: 99999999;" role="status">
+      <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<!-- ----------- -->
+<!-- Spinner End -->
+<!-- ----------- -->
+
+<!------------------------------------------------>
+<!-- NavBar start -->
+<!------------------------------------------------>
+   
+<div class="container-fluid nav-bar  header-area header-sticky w-100" style="z-index: 999999; ">
+  <nav class="navbar navbar-expand-lg  py-0 px-4  rounded" style="background: #ffffff;" >
+        
+      <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+          <div class="icon p-2 me-2">
+              <img class="img-fluid" src="img/Betak.jpg" alt="Icon" style="width: 40px; height: 40px;">
+          </div>
+          <h1 class="m-0" style="color: #B89F75; ">Betak</h1>
+      </a>
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link active ">Home</a>
+              <a href="about.html" class="nav-item nav-link " style="color:#000000b8;">About</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" style="color:#000000b8;">Property</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a class="dropdown-item " href="property list.html">Property List</a>
+                      <a href="compare.html "  class="dropdown-item">Compare</a>
+                      <a  class="dropdown-item" href="Calculator.html">Calculator</a> 
+                 </div>
+              </div>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" style="color:#000000b8;">Pages</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a  class="dropdown-item" href="PropertyDetails.html">Property Details</a>
+                       <a class="dropdown-item" href="reservation.html">Reservation</a>
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link text-dark">Contact</a>
+          </div>
+          <a href="" class="mt-5" style="background-color: #886220;"><a href="compare.html"><i id="compare" class="fa-solid fa-code-compare p-2   rounded-circle  m-2" style="color: #000000b8; font-size:20px; border: 1px solid #000000b8 ; " ></i></a><a href="wshlist.html"><i class=" like m-2 fa-solid fa-heart  p-2 rounded-circle" style="color: #000000b8; font-size:20px; border: 1px solid #000000b8"></i></a></a>
+      </div>
+
+  </nav>
+</div> 
+
+<!------------------------------------------------>
+<!-- Nav Bar End -->
+<!------------------------------------------------>
+
+
+<!-- ------------ -->
+<!-- Header Start -->
+<!-- ------------ -->
+<section class="hero" id="hero" style="height: 60vh;">
+  <div class="heroText">
+
+      <h3 class=" mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800" style="font-size: 70px; color: #B89F75; ">
+          Calculator
+        </h3>
+        <div style="height: 3px; width: 10%; background-color: #B89F75;  " class="my-3 mx-auto rounded-pill"></div>
+  </div>
+
+  <div class="videoWrapper d-flex justify-content-center align-items-center ">
+      <img src="img/woman-working-environment-projects-portrait.jpg" class="custom-video justify-content-center align-items-center" >
+          
+
+          Your browser does not support the video tag.
+      </img>
+  </div>
+
+  <div class="overlay" style="background-color: rgba(0, 0, 0, 0.536);"></div>
+</section>
+<!-- --------- -->
+<!--Header end -->
+<!-- --------- -->
+
+
+    <!-- ---------------- -->
+    <!-- Calculator Start-->
+    <!-- ---------------- -->
+    
+
+
+  <div class="container w-75">
+    
+        
+    <div class=" shadow rounded-3 p-3 white  fadeInUp" data-wow-delay="0.1s" style="margin: 100px 0;">
+      <div class="mx-auto text-center my-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1200px;">
+      <h5 class="section-title px-3">Calculator</h5>
+      <h1 class="mb-0">Lorem ipsum dolor sit.!</h1>
+  </div>
+      <div id="mortgage" class="wow fadeInUp" data-wow-delay="0.2s">
+          
+        <form id="mortgage " class="co-md-7 ">
+            
+          <main class="row mx-5">
+
+            <div class="form-floating mb-3 mt-3 col-md-4">
+              <input type="number" class="form-control autocomplete" id="homeValue" placeholder="Enter Home Value" name="homeValue" >
+              <label for="homeValue">Home Value</label>
+            </div>
+           
+            <div class="form-floating mb-3 mt-3 col-md-4">
+              <input type="number" class="form-control autocomplete" id="downPayment" placeholder="Enter Down Payment " name="downPayment" readonly>
+              <label for="downPayment"> Down Payment</label>
+            </div>
+            
+            <div class="form-floating mb-3 mt-3 col-md-4">
+              <input type="number" class="form-control autocomplete" readonly id="loanAmount" placeholder="Enter Loan Amount " name="downPayment">
+              <label for="LoanAmount">Loan Amount</label>
+            </div>
+          
+            <div class="form-floating mb-3 mt-3 col-md-6">
+              <input type="number" class="form-control autocomplete" readonly id="interestRate" placeholder="Enter Interes tRate " name="interestRate">
+              <label for="interestRate">Interest Rate</label>
+            </div>
+         
+           <div class="form-floating mb-3 mt-3  col-md-6">
+            <select class="form-select" id="loanDuration" aria-label="Floating label select example" style="color: #B89F75 !important;">
+              <option value="1"  class="option">1</option>
+              <option value="2" class="option">2</option>
+              <option value="3" class="option">3</option>
+              <option value="4" class="option">4</option>
+              <option value="5" class="option">5</option>
+              <option value="6" class="option">6</option>
+              <option value="7" class="option">7</option>
+              <option value="8" class="option">8</option>
+              <option value="9" class="option">9</option>
+              <option value="10" class="option">10</option>
+            </select>
+            <label for="floatingSelect">Works with selects</label>
+          </div>
+        
+          </main>
+      
+  
+     
+        <div class="row ">
+          <div class="col-md-4  " style="padding-left: 100px;">
+          <footer class="row-cols-1 align-items-center m-5 mx-auto">
+            <div class="mb-5 " style="border-bottom:1px solid #00000091 ;">
+              <b style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) ; font-size: larger;" >
+                monthly payment: 
+                <p class="my-2"><span  id="monthlyPayment"></span><span class="" id="zero">0$</span></p>
+              </b>
+           </div>
+            
+            <div class="mb-5"style="border-bottom:1px solid #00000091 ;" >
+              <b style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) ; font-size: larger;" >
+                Totale Interst: 
+                <p class="my-2"><span  id="totalInterest"></span><span class="" id="zero0">0$</span></p>
+              </b>
+           </div>
+           
+            <div class="" style="border-bottom:1px solid #00000091 ;">
+              <b style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) ; font-size: larger;" >
+                Total Payment : 
+                <p class="my-2"><span  id="totalPayment"></span><span class="" id="zeroo">0$</span></p>
+              </b>
+           </div>
+          </footer>
+        </div>
+        <div class="col-md-8  d-flex justify-content-center align-items-center">
+<div class="chart-container col-md-5 w-50 ">
+<canvas id="mortgageChart" ></canvas>
+</div>
+</div>
+        </div>
+      </form>
+</div>
+       
+</div> 
+    
+</div>
+  
+
+
+    <!-- ---------------- -->
+    <!-- Calculator End------>
+    <!-- ---------------- --> 
+
+        
+<!------------------------------------------------>
+<!---------------- Footer Start------>
+<!------------------------------------------------>
+        
+        
+<div class="container-fluid text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="position: relative;  background-image: url(img/pngtree-black-and-gray-living-room-3d-render-with-indoor-garden-for-picture-image_3756840.jpg);">
+            
+  <div class="container  w-100" style="z-index:9999; " >
+        <div class="row g-5" style="z-index:9999;">
+            <div class="col-lg-3 col-md-6 text-white" style="z-index:9999; " >
+                <h5 class=" mb-4" style="color: #B89F75;">Get In Touch</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Cairo, Egypt</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2 text-white" >
+                    <a class="btn  btn-social" href="" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);"><i class="fab fa-twitter" ></i></a>
+                    <a class="btn  btn-social" href="" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);"><i class="fab fa-facebook-f" ></i></a>
+                    <a class="btn  btn-social" href=""style="color: aliceblue; background-color: rgba(240, 248, 255, 0);"><i class="fab fa-youtube" ></i></a>
+                    <a class="btn  btn-social" href="" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);"><i class="fab fa-linkedin-in" ></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="z-index:9999; color: #B89F75;">
+                <h5 class=" mb-4" style="color: #B89F75;" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);">Quick Links</h5>
+                <a class="btn btn-link text-white" href=""style="color: aliceblue; background-color: rgba(240, 248, 255, 0);" >About Us</a>
+                <a class="btn btn-link text-white" href="" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);">Contact Us</a>
+                <a class="btn btn-link text-white" href="" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);">Our Services</a>
+                <a class="btn btn-link text-white" href="" style="color: aliceblue; background-color: rgba(240, 248, 255, 0);">Privacy Policy</a>
+                <a class="btn btn-link text-white" href=""style="color: aliceblue; background-color: rgba(240, 248, 255, 0);" >Terms & Condition</a>
+            </div>
+            <div class="col-lg-3 col-md-6" style="z-index:9999;">
+                <h5 class=" mb-4" style="color: #B89F75;">Photo Gallery</h5>
+                <div class="row g-2 pt-2" style="z-index:9999;">
+                    <div class="col-4" style="z-index:9999;">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                    </div>
+                    <div class="col-4" style="z-index:9999;">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
+                    </div>
+                    <div class="col-4" style="z-index:9999;">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
+                    </div>
+                    <div class="col-4" style="z-index:9999;">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
+                    </div>
+                    <div class="col-4" style="z-index:9999;">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
+                    </div>
+                    <div class="col-4" style="z-index:9999;">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-white" style="z-index:9999; ">
+                <h5 class=" mb-4" style="color: #B89F75;">Newsletter</h5>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn   position-absolute top-0 end-0 mt-2 me-2 text-white" style="background-color: #B89F75;">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"style="z-index:9999;" >
+        <div class="copyright" style="z-index:9999;">
+            <div class="row" style="z-index:9999;">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" style="z-index:9999;">
+                    &copy; <a class="border-bottom" href="#">Betak</a>, All Right Reserved. 
+      
+      
+      Designed By <a class="border-bottom" href="https://htmlcodex.com">Betak team</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.536); background-position: center; background-attachment: fixed; background-size: cover ; background-repeat: no-repeat;"></div>
+</div>
+</div>
+<!-- ---------------- -->
+<!-- Footer End -------->
+<!-- ------------------- -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg  btn-lg-square back-to-top" style="background-color: #B89F75;"><i class="bi bi-arrow-up"></i></a>
+
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="lib/js/counter.js"></script>
+   <script src="lib/js/jquery-migrate.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="lib/js/all.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="lib/js/calculator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+  </body>
+</html>
